@@ -33,7 +33,7 @@ interface Props extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDi
   onSubmitForm: (formData: FormSchema) => void
 }
 
-export default function CharacterForm({ defaultValues = {}, onCancel, onSubmit, className, ...otherProps }: Props) {
+export default function CharacterForm({ defaultValues = {}, onCancel, onSubmitForm, className, ...otherProps }: Props) {
   const { control, handleSubmit } = useForm<FormSchema>({
     defaultValues,
     resolver: zodResolver(FormSchema),
@@ -57,7 +57,7 @@ export default function CharacterForm({ defaultValues = {}, onCancel, onSubmit, 
 
   return (
     <div {...otherProps} className={className}>
-      <Form {...formItemLayout} className={styles.CharacterForm} onFinish={handleSubmit(onSubmit)}>
+      <Form {...formItemLayout} className={styles.CharacterForm} onFinish={handleSubmit(onSubmitForm)}>
         {CHARACTER_INFO_KEYS.map((fieldKey) => (
           <Controller
             key={fieldKey}
