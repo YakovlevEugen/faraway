@@ -1,7 +1,7 @@
 # Faraway
 
-- NodeJS 18+
-- NPM 9+ / Yarn
+#### [Prod](https://faraway-test.netlify.app)
+#### [Storybook](https://faraway-storybook.netlify.app)
 
 ## Technologies
 - [TypeScript](https://www.typescriptlang.org/)
