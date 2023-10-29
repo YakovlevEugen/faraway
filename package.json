@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "vite build && mv build/files build/assets/files",
-    "build-storybook": "VITE_API_HOST=msw storybook build",
+    "build-storybook": "storybook build",
     "check-types": "tsc --noEmit",
     "dev": "vite",
     "dev:mocks": "VITE_API_HOST=msw vite",
@@ -80,5 +80,8 @@
   },
   "msw": {
     "workerDirectory": "public"
+  },
+  "resolutions": {
+    "jackspeak": "2.1.1"
   }
 }
