@@ -1,0 +1,15 @@
+.PageCharacter {
+  &__Info {
+    column-gap: 30px;
+    display: flex;
+
+    @include tablet {
+      flex-direction: column;
+      gap: 40px 0;
+    }
+  }
+
+  &__InfoBlock {
+    flex: 1;
+  }
+}

@@ -1,0 +1,9 @@
+.CharactersList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 20px;
+
+  &__Item {
+    width: 285px;
+  }
+}

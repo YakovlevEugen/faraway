@@ -1,0 +1,68 @@
+$breakpoint-widescreen: 1800px;
+$breakpoint-desktop: 1200px;
+$breakpoint-laptop: 992px;
+$breakpoint-tablet: 772px;
+$breakpoint-big-phone: 600px;
+$breakpoint-phone: 480px;
+
+@mixin media($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin widescreen() {
+  /* min 1800 */
+  @media screen and (min-width: $breakpoint-widescreen) {
+    @content;
+  }
+}
+
+@mixin desktop() {
+  /* 1800-1200 */
+  @media screen and (max-width: $breakpoint-desktop) {
+    @content;
+  }
+}
+
+@mixin min-laptop() {
+  /* 1200-992 */
+  @media screen and (min-width: $breakpoint-laptop) {
+    @content;
+  }
+}
+
+@mixin laptop() {
+  /* from 992 */
+  @media screen and (max-width: $breakpoint-laptop) {
+    @content;
+  }
+}
+
+@mixin min-tablet() {
+  /* from ipad */
+  @media screen and (min-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  /* ipad */
+  @media screen and (max-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin big-phone() {
+  /* iphone */
+  @media screen and (max-width: $breakpoint-big-phone) {
+    @content;
+  }
+}
+
+@mixin phone() {
+  /* old phones */
+  @media screen and (max-width: $breakpoint-phone) {
+    @content;
+  }
+}

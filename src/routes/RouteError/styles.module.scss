@@ -1,0 +1,36 @@
+.ErrorRoute {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+.ErrorRoute__Title {
+  margin-bottom: 20px;
+}
+
+.ErrorRoute__Description {
+  font-size: 20px;
+}
+
+.ErrorRoute__Links {
+  margin-top: 10px;
+
+  a {
+    font-size: 20px;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.ErrorRoute__StorybookDecorator {
+  .ErrorRoute {
+    height: 100%;
+    width: 100%;
+  }
+}

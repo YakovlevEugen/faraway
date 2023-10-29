@@ -1,0 +1,11 @@
+.action-icon {
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+  vertical-align: middle;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

@@ -1,0 +1,30 @@
+.LayoutDefault {
+  min-height: 100vh;
+
+  &__Inner {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
+  &__Header {
+    align-items: center;
+    display: flex;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  &__Logo {
+    height: 50px;
+    margin-right: 20px;
+  }
+
+  &__Menu {
+    flex: auto;
+  }
+
+  &__Content {
+    padding: 30px 40px;
+  }
+}

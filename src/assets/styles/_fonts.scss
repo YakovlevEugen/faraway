@@ -1,0 +1,28 @@
+@mixin font-face($file, $weight, $style: normal) {
+  @font-face {
+    font-family: Muller;
+    font-style: $style;
+    font-weight: $weight;
+    src:
+      url("/assets/fonts/Muller/#{$file}.otf") format("opentype"),
+      url("/assets/fonts/Muller/#{$file}.woff") format("woff"),
+      url("/assets/fonts/Muller/#{$file}.woff2") format("woff2");
+  }
+}
+
+@include font-face(Muller-Thin, 100);
+@include font-face(Muller-ThinItalic, 100, italic);
+@include font-face(Muller-Light, 300);
+@include font-face(Muller-LightItalic, 300, italic);
+@include font-face(Muller-Regular, 400);
+@include font-face(Muller-RegularItalic, 400, italic);
+@include font-face(Muller-Medium, 500);
+@include font-face(Muller-MediumItalic, 500, italic);
+@include font-face(Muller-Bold, 600);
+@include font-face(Muller-BoldItalic, 600, italic);
+@include font-face(Muller-Bold, 700);
+@include font-face(Muller-BoldItalic, 700, italic);
+@include font-face(Muller-ExtraBold, 800);
+@include font-face(Muller-ExtraBoldItalic, 800, italic);
+@include font-face(Muller-Black, 900);
+@include font-face(Muller-BlackItalic, 900, italic);

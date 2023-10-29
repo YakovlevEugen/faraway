@@ -1,0 +1,14 @@
+.CharacterForm {
+  &__Inner {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__InnerBlock {
+    flex: 1;
+  }
+
+  &__Buttons {
+    text-align: right;
+  }
+}
